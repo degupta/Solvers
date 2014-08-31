@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WWF_DEVANSH</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="todo">TODO: game</string>
+    <string name="splash_logo">Splash Logo</string>
+    <string name="zynga_logo">Zynga Logo</string>
+    <string name="title_activity_menu">Menu Activity</string>
+    <string name="title_activity_game">Game Activity</string>
+    <string name="login_desc">Don\'t have an account? Enter your email address and we\'ll automatically create one for you</string>
+    <string name="title_activity_play">Play Activity</string>
+    <string name="title_activity_chat">Chat Activity</string>
+
+</resources>

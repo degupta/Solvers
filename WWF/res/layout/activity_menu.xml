@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="@drawable/background" >
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dip"
+        android:gravity="top"
+        android:padding="0dip" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/header_logo"
+        	android:background="@drawable/header_gradient" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView1"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+            	 <ImageButton
+		            android:id="@+id/xpromo_game_icon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/zynga_footer"
+		            android:background="#00000000" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout3"
+      	android:layout_below="@id/relativeLayout1"
+      	android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp" >
+        	<TextView
+		        android:id="@+id/your_move_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Your Move"
+		        android:textColor="#FFFFFF"
+		        android:textSize="25sp"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:background="@drawable/rounded_top_green"
+		        android:paddingLeft="10dp"
+		        android:paddingTop="10dp"
+		        android:paddingRight="10dp" />
+		    <ListView
+		        android:id="@+id/game_list"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_below="@id/your_move_text"
+		        android:background="#1C7F70" >
+		    </ListView>
+	</RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout2"
+        android:padding="0dip" >
+        	<Button
+        	    android:id="@+id/logout_button"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:background="@drawable/button_ok"
+        	    android:text="Logout"
+        	    android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dip"
+        android:gravity="top"
+        android:padding="0dip" >
+        	<ImageView
+	            android:id="@+id/imageView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:src="@drawable/zynga_footer" />
+        	
+        	<TextView
+		        android:id="@+id/build_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/imageView2"
+		        android:text="Example With Friends"
+		        android:layout_centerHorizontal="true"
+		        android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+   
+</RelativeLayout>
